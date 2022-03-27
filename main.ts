@@ -189,7 +189,7 @@ export default class FilenameHeadingSyncPlugin extends Plugin {
             file,
             lines,
             heading.lineNumber,
-            `title: \"${sanitizedHeading}\"`,
+            `title:  \"${sanitizedHeading}\"`,
           );
         }
       } //else this.insertLineInFile(file, lines,`title: ${sanitizedHeading}`); // this would insert title: filename on the first line--for now I don't want this extension to do anything if there isn't YAML detected
@@ -232,10 +232,10 @@ export default class FilenameHeadingSyncPlugin extends Plugin {
          if (fileLines[i] === '---'){
            return null; //hit end of YAML, stop
          }
-         if (fileLines[i].startsWith('title: \"')) {
+         if (fileLines[i].startsWith('title:  \"')) {
         return {
           lineNumber: i,
-          text: fileLines[i].substring(8), //"title: " is 7 chars, elim those
+          text: fileLines[i].substring(9), //"title:  \"" is 9 chars, elim those
         };
       }
     }
