@@ -22,7 +22,7 @@ date:   2022-03-13 19:10:06
 ```
 It only acts on save, not on fileopen to avoid interference with other plugins; must edit the file to trigger it.
 ***
-This code is a fugly hack [dvcrn's repo](https://github.com/dvcrn/obsidian-filename-heading-sync/tree/e301aa40b709fabe5ac43b62cfcafa8192fccd21); exact same behavior but for the first heading in the file instead of the YAML title. They deserve all credit.
+This code is a fugly hack of [dvcrn's repo](https://github.com/dvcrn/obsidian-filename-heading-sync/tree/e301aa40b709fabe5ac43b62cfcafa8192fccd21); exact same behavior but for the first heading in the file instead of the YAML title. They deserve all credit.
 
 
 MIT licensing.
